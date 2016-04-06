@@ -31,5 +31,14 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "Parent": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Child": {
+    "dataSource": "db",
+    "public": true
   }
+
 }
