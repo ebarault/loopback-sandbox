@@ -1,0 +1,28 @@
+{
+    "name": "Child",
+    "plural": "Childs",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
+    },
+    "properties": {
+    },
+    "validations": [],
+    "relations": {
+        "parent": {
+            "type": "belongsTo",
+            "model": "Parent",
+            "foreignKey": "parentId"
+        }
+    },
+    "acls": [
+        {
+            "accessType": "*",
+            "principalType": "ROLE",
+            "principalId": "$everyone",
+            "permission": "ALLOW"
+        }
+    ],
+    "methods": {}
+}
