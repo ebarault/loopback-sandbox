@@ -1,0 +1,37 @@
+{
+	"name": "user",
+	"plural": "users",
+	"base": "User",
+	"idInjection": true,
+	"strict": "true",
+	"options": {
+		"validateUpsert": true
+	},
+	"mixins": {},
+	"properties": {},
+	"hidden": [],
+	"protected": [],
+	"validations": [],
+	"relations": {},
+	"acls": [
+    {
+			"accessType": "EXECUTE",
+			"principalType": "ROLE",
+			"principalId": "$owner",
+			"permission": "ALLOW",
+			"property": [
+        "testInjectedOptions"
+			]
+		},
+    {
+			"accessType": "EXECUTE",
+			"principalType": "ROLE",
+			"principalId": "$dynamicRole",
+			"permission": "ALLOW",
+			"property": [
+        "testInjectedOptions"
+			]
+		}
+  ],
+	"methods": {}
+}
